@@ -4,7 +4,7 @@
   "description": "Generate a complete React + Node.js full-stack app with auth in seconds",
   "version": "1.0.0",
   "publisher": "suraj-ingole-dev",
-    "engines": {
+  "engines": {
     "vscode": "^1.85.0"
   },
   "author": {
@@ -17,7 +17,7 @@
     "url": "https://github.com/srjingole0610/fullstack-project-generator"
   },
   "bugs": {
-    "url": "https://github.com/yourname/fullstack-project-generator/issues"
+    "url": "https://github.com/srjingole0610/fullstack-project-generator/issues"
   },
   "license": "MIT",
   "icon": "images/icon.png",
@@ -33,5 +33,48 @@
   "keywords": [
     "fullstack", "react", "nodejs", "express",
     "generator", "jwt", "scaffold", "boilerplate"
-  ]
+  ],
+  "activationEvents": [
+    "onCommand:fullstack-generator.generate"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "fullstack-generator.generate",
+        "title": "Generate Full Stack App",
+        "category": "FullStack Generator",
+        "icon": "$(rocket)"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "fullstack-generator.generate",
+        "key": "ctrl+shift+g",
+        "mac": "cmd+shift+g",
+        "when": "!terminalFocus"
+      }
+    ],
+    "menus": {
+      "commandPalette": [
+        {
+          "command": "fullstack-generator.generate"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile",
+    "lint": "eslint src --ext ts"
+  },
+  "devDependencies": {
+    "@types/node": "18.x",
+    "@types/vscode": "^1.85.0",
+    "@typescript-eslint/eslint-plugin": "^6.15.0",
+    "@typescript-eslint/parser": "^6.15.0",
+    "typescript": "^5.3.3"
+  }
 }
