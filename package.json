@@ -3,7 +3,10 @@
   "displayName": "FullStack Project Generator",
   "description": "Generate a complete React + Node.js full-stack app with auth in seconds",
   "version": "1.0.0",
-  "publisher": "suraj-ingole",
+  "publisher": "suraj-ingole-dev",
+    "engines": {
+    "vscode": "^1.85.0"
+  },
   "author": {
     "name": "Suraj Ingole",
     "email": "suraj.ingole0610@email.com"
