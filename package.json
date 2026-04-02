@@ -1,0 +1,34 @@
+{
+  "name": "fullstack-project-generator",
+  "displayName": "FullStack Project Generator",
+  "description": "Generate a complete React + Node.js full-stack app with auth in seconds",
+  "version": "1.0.0",
+  "publisher": "suraj-ingole",
+  "author": {
+    "name": "Suraj Ingole",
+    "email": "suraj.ingole0610@email.com"
+  },
+  "homepage": "https://github.com/yourname/fullstack-project-generator",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourname/fullstack-project-generator"
+  },
+  "bugs": {
+    "url": "https://github.com/yourname/fullstack-project-generator/issues"
+  },
+  "license": "MIT",
+  "icon": "images/icon.png",
+  "galleryBanner": {
+    "color": "#0f172a",
+    "theme": "dark"
+  },
+  "categories": [
+    "Other",
+    "Snippets",
+    "Programming Languages"
+  ],
+  "keywords": [
+    "fullstack", "react", "nodejs", "express",
+    "generator", "jwt", "scaffold", "boilerplate"
+  ]
+}
