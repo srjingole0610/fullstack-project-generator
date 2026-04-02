@@ -2,7 +2,7 @@
   "name": "fullstack-project-generator",
   "displayName": "FullStack Project Generator",
   "description": "Generate a complete React + Node.js full-stack app with auth in seconds",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "publisher": "suraj-ingole-dev",
   "engines": {
     "vscode": "^1.85.0"
